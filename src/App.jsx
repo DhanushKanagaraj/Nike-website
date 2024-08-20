@@ -1,14 +1,31 @@
+const App=()=>(
+  <main className="relative">
+    Nav
+    <section className="xl:padding-1 wide:padding-r padding-b">
+      Hero
+    </section>
+    <section className="padding">
+      PopularProducts
+    </section>
+    <section className="padding">
+      SuperQuality
+    </section>
+    <section className="padding-x py-10">
+      Services 
+    </section>
+    <section className="padding">
+      SpecialOffers
+    </section>
+    <section className="bg-pale-blue padding">
+      Customereviews
+    </section>
+    <section className="padding-x sm:py-32 py-16 w-full">
+      Subscribe
+    </section>
+    <section className=" bg-black padding-x padding-y pb-8">
+      Footer
+    </section>
+  </main>
+);
 
-import './App.css'
-
-function App() {
-  
-  return(
-    <>
-    <div className="text-lg">Hello World</div>
-   <div className="border-2 bg-gray-100"> Home</div>
-    </>
-  )
-}
-
-export default App
+export default App;
