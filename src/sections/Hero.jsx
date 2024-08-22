@@ -1,8 +1,9 @@
 import React from 'react'
 import Buttons from '../componenets/Buttons';
 import {arrowRight} from '../assets/icons'
-import {statistics} from '../constants'
+import {shoes,statistics} from '../constants'
 import {bigShoe1} from '../assets/images'
+import Shoecard from '../componenets/Shoecard';
 const Hero = () => {
   return (
     <section id="home" className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'> 
@@ -36,7 +37,21 @@ const Hero = () => {
       height={500}
       className='object-contain relative z-10'
       />
+
+      <div>
+        {shoes.map((shoe)=>(
+          <div key={shoe}>
+            <Shoecard    
+            imgURL={shoe}
+            changeBigShoeImage={()=>{}}
+            bigShoeImage=""            
+            />
+          </div>
+        ))}
+      </div>
     </div>
+
+    
 
     </section>
   )
